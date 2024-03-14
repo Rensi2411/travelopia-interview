@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Page Component</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Travelopia✈️</h1>
+         <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="full-page-component">
+            <div class="overlay"></div>
+            <img src="images/background-image.jpeg" alt="Full Width Image" class="full-width-image">
+            <h1 class="main-title">Discover the world with us!</h1>
+            <button onclick="showStyledAlert()">Click here</button>
+        </div>
+    </main>
+    
+    <div id="styledAlert" class="alert-container">
+        <div class="alert">
+            <span class="close-btn" onclick="closeStyledAlert()">X</span>
+            <h2>Hello, World!</h2>
+            <button onclick="closeStyledAlert()">OK</button>
+        </div>
+    </div>
+
+    <footer>All right reserved &copy; 2024</footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

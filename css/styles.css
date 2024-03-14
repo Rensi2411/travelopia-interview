@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* header css start */
+
+header {
+    height: 100px;
+    background: rgb(19, 17, 17);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.title{
+    font-family:Playfair Display, serif;
+    color: white;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* header css end */
+
+/* main css start */
+
+main {
+    height: calc(100% - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-page-component {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-width-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.full-page-component::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.full-page-component button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background: rgb(19, 17, 17);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: -100px;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.full-page-component button:hover {
+    background: white;
+    color: black;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.main-title {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.close-btn {
+    display: none;
+    cursor: pointer;
+}
+
+/* main css end */
+
+/* humberger css start */
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 3px 0;
+}
+
+/* humberger css end */
+
+/* alert css start */
+
+.alert-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(19, 17, 17);
+    padding: 23px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.alert {
+    color: white;
+    text-align: center;
+}
+
+.alert h2 {
+    margin-bottom: 20px;
+}
+
+.alert button {
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.alert button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* alert css end */
+
+/* footer css start */
+
+footer {
+    height: 100px;
+    background: rgb(19, 17, 17);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* footer css end */
+
+/* media query start */
+
+@media only screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px; 
+        left: 0;
+        width: 100%;
+        background: rgb(19, 17, 17);
+        z-index: 3;
+    }
+
+    nav.show-menu {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+    .main-title{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .title{
+        font-size: 30px;
+    }
+    .main-title{
+        font-size: 20px;
+    }
+    .alert{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .title{
+        font-size: 18px;
+    }
+    .alert{
+        font-size: 8px;
+    }
+    
+}
+
+/* media query end */
