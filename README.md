@@ -27,6 +27,9 @@ Responsive Design: Media queries and flexbox/grid layouts for responsiveness.
 
 Image Optimization: Ensures images are optimized for faster loading times.
 
+# Doc link
+https://docs.google.com/document/d/1E50s-h6j6XYMpkW4mertlG6zBKb8pGYKFzz4MXV0okY/edit?usp=sharing
+
 # Deploy Link
 https://65f337afd3011608cf0006f2--rainbow-pastelito-287a6f.netlify.app/
 
