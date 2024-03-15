@@ -4,6 +4,8 @@ Welcome to Travelopia, your ultimate travel companion!
 # Features
 Full-Page Component: A visually appealing full-page component with dynamic content.
 
+Header and Footer: fix 100px height for any device.
+
 Translucent Overlay: Implements a translucent overlay above the background image for enhanced visual appeal.
 
 Centered Title: Displays the title "Discover the world with us!" at the center of the page, above the image and overlay.
