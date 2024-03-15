@@ -1,24 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0; 
+    padding: 0; 
     box-sizing: border-box;
 }
 
 body, html {
-    height: 100%;
-    font-family: Arial, sans-serif;
+    height: 100%; /* Setting full height for body and html */
+    font-family: Arial, sans-serif; 
 }
 
 /* header css start */
 
 header {
-    height: 100px;
+    height: 100px; /* Setting header height */
     background: rgb(19, 17, 17);
     color: #fff;
-    display: flex;
-    align-items: center;
+    display: flex; /* Using flexbox for header layout */
+    align-items: center; 
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 20px; 
 }
 
 .title{
@@ -27,20 +27,20 @@ header {
 }
 
 nav {
-    display: flex;
+    display: flex; 
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+    list-style: none; 
+    display: flex; 
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 20px; 
 }
 
 nav ul li:last-child {
-    margin-right: 0;
+    margin-right: 0; 
 }
 
 nav ul li a {
@@ -54,90 +54,85 @@ nav ul li a {
 /* main css start */
 
 main {
-    height: calc(100% - 200px);
-    display: flex;
-    justify-content: center;
+    height: calc(100% - 200px); /* Setting main height relative to footer and header */
+    display: flex; 
+    justify-content: center; 
     align-items: center;
 }
 
 .full-page-component {
-    position: relative;
+    position: relative; /* Setting position relative for absolute positioning inside */
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
     align-items: center;
 }
 
 .full-width-image {
-    position: absolute;
-    top: 0;
+    position: absolute; /* Setting position absolute to overlay other elements */
+    top: 0; /* Aligning image to the top */
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    object-fit: cover; 
+    z-index: -1; /* Moving image behind other elements */
 }
 
 .full-page-component::after {
-    content: "";
-    position: absolute;
-    top: 0;
+    content: ""; /* Adding content to create pseudo-element */
+    position: absolute; /* Setting position absolute for overlay */
+    top: 0; 
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); /* Setting background color with transparency */
+    z-index: -1; /* Moving overlay behind other elements */
 }
 
 .full-page-component button {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 20px;
+    display: block; /* Displaying button as block element */
+    margin: 0 auto; 
+    padding: 10px 20px; 
     background: rgb(19, 17, 17);
-    color: #fff;
-    border: none;
+    color: #fff; 
+    border: none; 
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
-    margin-bottom: -100px;
-    font-size: 20px;
-    z-index: 2;
+    transition: background 0.3s; /* Adding transition effect on background change */
+    margin-bottom: -100px; 
+    font-size: 20px; 
+    z-index: 2; /* Ensuring button is above overlay */
 }
 
 .full-page-component button:hover {
-    background: white;
+    background: white; 
     color: black;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: absolute; /* Setting position absolute for overlay */
+    top: 0; 
+    left: 0; 
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); /* Setting background color with transparency */
+    z-index: 1; /* Moving overlay above other elements */
 }
 
 .main-title {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    z-index: 2; 
-    color: white;
-    font-family: 'Playfair Display', serif;
+    position: absolute; /* Setting position absolute for title */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering title using transform */
+    z-index: 2; /* Ensuring title is above overlay */
+    color: white; 
+    font-family: 'Playfair Display', serif;  
     font-size: 32px; 
     text-align: center;
     margin: 0;
-    padding: 0;
-}
-
-.close-btn {
-    display: none;
-    cursor: pointer;
+    padding: 0; 
 }
 
 /* main css end */
@@ -145,14 +140,14 @@ main {
 /* humberger css start */
 
 .hamburger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+    display: none; /* Hiding hamburger menu by default */
+    flex-direction: column; 
+    cursor: pointer; 
 }
 
 .hamburger-menu span {
-    height: 3px;
-    width: 25px;
+    height: 3px; 
+    width: 25px; 
     background: #fff;
     margin: 3px 0;
 }
@@ -162,38 +157,38 @@ main {
 /* alert css start */
 
 .alert-container {
-    display: none;
-    position: fixed;
+    display: none; /* Hiding alert container by default */
+    position: fixed; /* Setting position fixed for alert container */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(19, 17, 17);
-    padding: 23px;
+    transform: translate(-50%, -50%); /* Centering alert container using transform */
+    background-color: rgb(19, 17, 17); 
+    padding: 23px; 
     border-radius: 10px;
-    z-index: 2;
+    z-index: 2; /* Ensuring alert container is above other elements */
 }
 
 .alert {
-    color: white;
-    text-align: center;
+    color: white; 
+    text-align: center; 
 }
 
 .alert h2 {
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 
 .alert button {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #333; 
     border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
+    border-radius: 5px; 
+    color: white; 
+    cursor: pointer; 
 }
 
 .alert button:hover {
-    background-color: white;
-    color: black;
+    background-color: white; 
+    color: black; 
 }
 
 /* alert css end */
@@ -201,13 +196,12 @@ main {
 /* footer css start */
 
 footer {
-    height: 100px;
+    height: 100px; /* Setting footer height */
     background: rgb(19, 17, 17);
-    color: white;
+    color: white; 
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    
 }
 
 /* footer css end */
@@ -216,22 +210,22 @@ footer {
 
 @media only screen and (max-width: 768px) {
     .hamburger-menu {
-        display: flex;
+        display: flex; /* Displaying hamburger menu on smaller screens */
     }
 
     nav {
-        display: none;
+        display: none; /* Hiding navigation by default on smaller screens */
         flex-direction: column;
-        position: absolute;
-        top: 100px; 
-        left: 0;
-        width: 100%;
+        position: absolute; /* Setting position absolute for navigation */
+        top: 100px;
+        left: 0; 
+        width: 100%; 
         background: rgb(19, 17, 17);
-        z-index: 3;
+        z-index: 3; /* Ensuring navigation is above other elements */
     }
 
     nav.show-menu {
-        display: flex;
+        display: flex; 
     }
 
     nav ul {
@@ -240,40 +234,41 @@ footer {
     }
 
     nav ul li {
-        margin-bottom: 10px;
+        margin-bottom: 10px; 
     }
 
     nav ul li:last-child {
-        margin-bottom: 0;
+        margin-bottom: 0; 
     }
 
     nav ul li a {
         font-size: 18px;
     }
+
     .main-title{
-        font-size: 25px;
+        font-size: 25px; 
     }
 }
 
 @media only screen and (max-width: 430px) {
     .title{
-        font-size: 30px;
+        font-size: 30px; 
     }
     .main-title{
-        font-size: 20px;
+        font-size: 20px; 
     }
     .alert{
-        font-size: 10px;
+        font-size: 10px; 
     }
 }
+
 @media only screen and (max-width: 280px) {
     .title{
-        font-size: 18px;
+        font-size: 18px; 
     }
     .alert{
-        font-size: 8px;
+        font-size: 8px; 
     }
-    
 }
 
 /* media query end */
