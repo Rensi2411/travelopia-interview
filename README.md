@@ -30,7 +30,7 @@ Image Optimization: Ensures images are optimized for faster loading times.
 # Doc link
 https://docs.google.com/document/d/1E50s-h6j6XYMpkW4mertlG6zBKb8pGYKFzz4MXV0okY/edit?usp=sharing
 
-# Deploy Link
+# Deployed Link
 https://65f41540fd027e39dc246937--rad-pavlova-3ef2d7.netlify.app/
 
 # Laptop view
